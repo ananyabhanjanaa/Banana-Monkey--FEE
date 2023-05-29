@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ultra&display=swap" rel="stylesheet">
+    <title>LOGIN PAGE</title>
+    <style>
+      body {
+        background-color: #F7DEBD;
+        font-family: Castellar, sans-serif;
+      }
+
+      .login-box {
+        background-color: plum;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(14, 15, 16, 0.653);
+        margin: auto;
+        max-width: 400px;
+        padding: 40px;
+        text-align: left;
+        
+      }
+
+      .login-box img {
+        border-radius: 100%;
+        margin-bottom: 100px;
+        max-width: 400px;
+      }
+
+      .login-box input[type="text"], .login-box input[type="password"] {
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 5px rgba(71, 199, 150, 0.1);
+        padding: 10px;
+        width: 80%;
+      }
+
+      .login-box input[type="submit"] {
+        background-color: #D0EEEC;
+        border-radius: 2.5px;
+        border: none;
+        color: #000102;
+        cursor: pointer;
+        margin-top: 10px;
+        padding: 10px;
+        transition: background-color 0.3s ease;
+        width: 100%;
+      }
+
+      .login-box input[type="submit"]:hover {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <center><img style="width: 200px;" src="https://i.pinimg.com/564x/02/ec/be/02ecbeb15b194097be973397cf9cfd42.jpg" alt="Logo">
+      <h1 style="font-family: 'Kaushan Script'; color: purple;text-shadow: 2px 2px 5px yellow">Banana Monkey</h1></center>
+    <div class="login-box">
+      <form action="#" method="post">
+        <h1><input type="submit" value="LOGIN"></h1>
+        <!-- <input type="submit" value ="Register"> -->
+
+        <label><b>FIRST NAME</b></label>
+        <input type="text" placeholder="Enter First Name" Name="uName" required><br>
+
+        <label><b>LAST NAME</b></label>
+        <input type="text"placeholder="Enter Last Name" Name="Last Name" required><br>
+
+        <label><b>EMAIL ID.</b></label>
+        <input type="text" placeholder="Enter Email ID" Name="Email ID" required><br>
+
+        <label><b>CHOOSE NEW PASSWORD</b></label>
+        <input type="text" placeholder="Enter Password" Name="Password" required><br>
+                          
+        <label><b>CONFIRM PASSWORD</b></label>
+        <input type="text" placeholder="Enter Password" Name="Password" required><br>
+
+       
+        <label><b>GENDER</b></label>
+        <input type="checkbox" checked="checked">Male
+        <input type="checkbox" checked="checked">Female
+        <input type="checkbox" checked="checked">other<br>
+
+        <button type="submit">LET's GET STARTED</button>
+
+      </form>
+    </div>
+  </body>
+</html>

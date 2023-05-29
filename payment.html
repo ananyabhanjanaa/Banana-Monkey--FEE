@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Playfair+Display:wght@500&family=Ultra&display=swap" rel="stylesheet">
+    <title>payment form</title>
+    <style>
+        body {
+          background-image: url('https://i.pinimg.com/564x/9d/41/71/9d417187ddc816821ca3a9abbfb45ece.jpg');
+          background-repeat: no-repeat;
+          background-size: 100%;
+        }
+        .ab{
+            display: flex;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        </style>
+</head>
+<div class="ab">
+<body>
+    <div>
+    <form action="">
+    <!--action me hum server ki loaction daalte hai, lekin abhi koi loaction daalne ke luye nahii hai , isliye islo khaalo leave kar dege abhi ke  liye-->
+    <center><u><h1 style="font-family: Kaushan Script; font-size: 3pz; font-stretch: semi-expanded;">
+        Payment Form
+    </h1></u>
+</center>
+    <h2 style="font-family: Kaushan Script;"> Contact Information</h2>
+    <p>
+        REQUIRED FIELD ARE FOLLOWED BY A STAR
+    </p>
+    <div>
+    <p style="font-family: Kaushan Script;">Name =* <input type="text" name="Name" required></p>
+    <!--required attibute is used so that he user has to fill the name column, he cant submit whithot it bcz it is compulory/required-->
+    <!--star(*) lagane se hum user ko condtion bata rhe hai star wali which is ki required fields are followed by a star-->
+</div>
+    <fieldset>
+
+    <div>
+    <legend style="font-family: Kaushan Script;"> CHOSE YOUR GENDER</legend>
+    <p style="font-family: Kaushan Script;">Male <input type="radio" name="gender" id="male"></p style="font-family: Kaushan Script;">
+    <p style="font-family: Kaushan Script;">Female <input type="radio" name="gender" id="female"></p>
+    </fieldset>
+</div>
+    <!--The <fieldset> is used for grouping all the controls of the form together to give it a structured look. It adds a border around the form to give it a differentiated look from all the other parts of the web page. We can also use the <legend> tag to give a caption to the form which is included inside the <fieldset>.-->
+        <br><br>
+    <fieldset>
+        <div>
+<div>
+    <p style="font-family: Kaushan Script;">
+        email:* <input type="email" name="email" id="email">
+    </p>
+    </div>
+    <div>
+    <p style="font-family: Kaushan Script;">
+        pincode= <input type="number" name="pin" id=""pin>
+    </p>
+</div>
+<div>
+    <h2 style="font-family: Kaushan Script;">
+        Payment Information
+    </h2>
+</div>
+<div>
+    <p style="font-family: Kaushan Script;">
+        card type= 
+        <select name="cardtype" id="cardtype">
+        <option value="">select a card type</option>
+        <option value="visa" >visa</option>
+        <option value="rupay">rupay</option>
+        <option value="mastercard">mastercard</option>
+        <option value="debit">debit</option>
+    </select>
+    </p>
+</div>
+     <!--agar hum option value ko empty nahi rakhte to fir ye value seedha peeche server me chali jaati and jo bhi user khud option select kar ke submit karta  vo na save hoti, uski jagah ye wali value chali jaati,isliye humne isko empty chod dia hai -->
+
+             <!--all these options jinke andar we have put some alue will appear in the dropdoen list out of which the customer can choose some value-->
+             <div>
+    <p>
+        card number <input type="number" name="cardnumber" id="cardnumber">
+        </p>
+        <p>
+            expiration date <input type="date" name="ed" id="ed">
+        </p>
+        <p>
+            time <input type="time" name="ed" id="ed">
+        </p>
+        <p>
+            cvv =*<input type="password" name="pw" id="pww">
+        </p>
+        <input type="submit" value="paynow">
+    </div>
+    </form>
+</div>
+</body>
+</html>

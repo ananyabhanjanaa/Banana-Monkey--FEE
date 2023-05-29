@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+
+    <title>HOMEPAGE</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="homepage.html">HOME</a>
+        <a href="login.html">LOGIN</a>
+        <a href="payment.html">PAYMENT</a>
+        <a href="aboutus.html">ABOUT US</a>
+
+        <input id="searchbar" type="text" placeholder="Search Themes">
+    </div>
+    
+    <ul class="myul" style="right:0px">
+
+          <li><a href="disneytheme.html" >disney</a></li>
+          <li><a href="marveltheme.html" >marvel</a></li>
+          <li><a href="demontheme.html" >demonslayer</a></li>
+          <li><a href="spyfamilytheme.html" >spyfamily</a></li>
+          <li><a href="powerpufftheme.html" >powerpuff</a></li>
+          <li><a href="ghiblitheme.html" >studio ghibli</a></li>
+    </ul>
+    
+        <div class="header-content">
+            <h1 style="font-family: 'Kaushan Script'; color: purple;text-shadow: 2px 2px 5px yellow">Banana Monkey</h1>
+            <div class="line"></div>
+            <h3>HOP UP YOUR STYLE!</h3>
+            <div class="line"></div>
+            <img style="width: 200px;" src="https://i.pinimg.com/564x/02/ec/be/02ecbeb15b194097be973397cf9cfd42.jpg" alt="">
+        </div>
+    <section class="section">
+        <div class="slider">
+            <div class="slide">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <div class="st first">
+                    <img src="1.1slider.jpg" alt="">
+                </div>
+                <div class="st">
+                    <img src="1.2slider.jpg" alt="">
+                </div>
+                <div class="st">
+                    <img src="1.3slider.jpg" alt="">
+                </div>
+                <div class="st">
+                    <img src="1.4slider.jpg" alt="">
+                </div>
+                <div class="nav-auto">
+                    <div class="a-b1"></div>
+                    <div class="a-b2"></div>
+                    <div class="a-b3"></div>
+                    <div class="a-b4"></div>
+                </div>
+            </div>
+            <div class="nav-m">
+                <label for="radio1" class="m-btn"></label>
+                <label for="radio2" class="m-btn"></label>
+                <label for="radio3" class="m-btn"></label>
+                <label for="radio4" class="m-btn"></label>
+            </div>
+        </div>
+    </section>
+    <section class="themes">
+        <div class="title">
+            <h1>THEMES</h1>
+        </secttion>
+ <div class="flex-container">
+    <div class="box">
+    <a href="demontheme.html" > <img style="width: 300px ;height:270px ;margin-bottom: 30px;" src="https://i.pinimg.com/564x/d9/c3/69/d9c369723c6c71c34b19e28ea87e5e07.jpg" alt="" >
+    </div> 
+  
+    <div class="box">
+                <a href="marveltheme.html" ><img style="width: 300px; height: 270px;margin-bottom: 30px;" src="https://i.pinimg.com/564x/19/e9/a3/19e9a3ad1a33505fbf1f51972e2c836e.jpg" alt="">
+                </div> 
+
+    <div class="box">
+                <a href="powerpufftheme.html" ><img style="width: 300px;height: 270px;margin-bottom: 30px;" src="https://static.toiimg.com/thumb/msid-77765542,width-500,resizemode-4/77765542.jpg" alt="" >
+                </div> 
+
+                <div class="box">
+<a href="disneytheme.html" ><img style="width: 300px;height: 270px;" src="https://i.pinimg.com/564x/81/e1/c0/81e1c00d64d91b8a5bb950eb6c31accd.jpg" alt="">
+</div>
+
+<div class="box">
+            <a href="spyfamilytheme.html" ><img style="width: 300px;height: 270px;"src="https://i.pinimg.com/564x/5e/6f/37/5e6f37d865ff8b28e2befe123980a43e.jpg" alt="">
+            </div>
+
+            <div class="box">
+            <a href="ghiblitheme.html" > <img style="width: 300px;height: 270px;" src="https://i.pinimg.com/564x/31/51/f1/3151f154393b9bbc00b427427c296c36.jpg" alt="">
+            </div>
+            </div>
+    <script>
+    let searchbar=document.getElementById("searchbar");
+                let li_tags=document.getElementsByTagName("li");
+                console.log(li_tags);
+                
+                searchbar.addEventListener("input",find_and_show);
+                
+                
+                function find_and_show(){
+                    let current_elemnt=searchbar.value.toLowerCase();
+                
+                for(i=0;i<li_tags.length;i++){
+                
+                    let element=li_tags[i].textContent.toLowerCase();
+                    
+                    if(element.includes(current_elemnt)){
+                        li_tags[i].style.display='';
+                    }
+                    else{
+                        li_tags[i].style.display='none';
+                    }
+                }
+            }
+    </script>
+    <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+            document.getElementById('radio' +counter).checked=true;
+            counter++;
+            if(counter>4){
+                counter=1;
+            }
+        },5000);
+
+    </script>
+                
+        
+        </body>
+</html>

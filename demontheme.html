@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <script src="jquery.js"></script>
+    <script src="ananya.js"></script>
+    <title>Demon Slayer T-shirts</title>
+    <style>
+ 
+        body{
+            margin: 0 auto;
+            background-image: linear-gradient(to right,pink,lightyellow);
+    
+        }
+        .baskar{
+          width: 300px;
+          margin-bottom: 25px;
+          height: 350px;
+        }
+        .below{
+          width: 300px;
+          height: 350px;
+          background-color:whitesmoke;
+         margin-bottom: 15px;
+         margin-left: 7px;
+
+        }
+        
+        .buy{
+          margin-left: 0.8cm;
+          color: whitesmoke;
+          background-color:palevioletred;
+          border: 3px solid palevioletred;
+          padding: 7px;
+          font-size: 15px;
+          font-weight: bold;
+          margin-bottom: 0.2cm;
+        }
+        .add{
+          margin-left:0.6cm ;
+          color: whitesmoke;
+          background-color:palevioletred;
+          border: 3px solid palevioletred;
+          padding: 7px;
+          font-size: 15px;
+          font-weight: bold;
+          margin-bottom: 0.2cm;
+        }
+        .rp{
+          padding-top: 1.75cm;
+          margin-left: 2cm;
+          font-size: 33px;
+          color: palevioletred;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .tshirtname{
+         
+          font-size: 17px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .fine{
+          display: flex;
+          flex-direction:row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          justify-content: center;
+          
+        }
+        .flex-container{
+          display: flex;
+          flex-direction: column;
+          
+          justify-content: center;
+          justify-content: space-between;
+          justify-content: space-around;
+        }
+        .abcd{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          justify-content: space-between;
+          justify-content: space-evenly;
+          margin: 2cm;
+          
+        }
+        .xxx{
+          color:whitesmoke;
+          background-color:palevioletred;
+          border: 3px palevioletred;
+          padding: 10px;
+          font-weight: bolder;
+          font-size: 20px;
+          font-weight: bold;
+          border-radius: 1cm;
+
+        }
+        #yourcart{
+          margin-top: 1cm;
+          color:palevioletred;
+          background-color:whitesmoke;
+          border: 3px solid palevioletred;
+          padding: 10px;
+          font-weight: bolder;
+          font-size: 20px;
+          font-weight: bold;
+          border-radius: 3cm;
+        }
+        #cart-items{
+          font-size: 18px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          color: purple;
+
+
+        }
+       
+
+       
+        
+    </style>
+      <body>
+         <center><img style="width:500px;padding: 10px;border: 3px solid black; margin-top: 0.7cm; ;" src="nezukoo.png" alt="demon slayer tshirts"></center>
+        
+
+
+         <div class="cat">
+          <center>
+          <h3>
+          <button id="yourcart">🛒 YOUR CART 🛒</button>
+        </h3>
+        </div>
+          </center>
+          <center>
+          <div>
+            <ol  id="cart-items">
+
+            </ol>
+        </center>
+        </div>
+        <div class="abcd">
+           <div><button id="aaa" class="xxx"> Rp.200 - Rp.300 </button></div> 
+          <div>  <button id="bbb" class="xxx"> Rp.300 - Rp.400 </button></div> 
+        <div>  <button id="ccc" class="xxx"> Rp.400 - Rp.500 </button></div> 
+      <div> <button id="ddd" class="xxx"> Rp.500 and above </button></div> 
+      </div>
+
+      <div id="product-list" class="flex-container">
+      
+
+              <div data-price="420" id="ds1" class="fine">
+                <div >
+                <img class="baskar" id="img1" src="demonslayer5.jpg" alt="">
+                </div>
+                <div id="good1" class="below">
+                  <h2 id="ru1" class="rp">Rp.420</h2>
+                  <center><h4 id="ttt1" class="tshirtname">Nezuko and Tanjiro T-shirt</h4></center>
+                  <button id="buy1" class="buy">BUY NOW</button>
+                  <button id="add1" class="add">ADD TO CART</button>
+                </div>
+
+                <div data-price="530" id="ds2" class="fine">
+                  <div >
+                  <img class="baskar" id="img2" src="demonslayer6.jpg" alt="">
+                  </div>
+                  <div id="good2" class="below">
+                    <h2 id="ru2" class="rp">Rp.530</h2>
+                  <center><h4 id="ttt2" class="tshirtname">Zenitsu T-shirt</h4></center>
+                    <button id="buy2" class="buy">BUY NOW</button>
+                    <button id="add2" class="add">ADD TO CART</button>
+                  </div>
+
+                  <div data-price="290" id="ds3" class="fine">
+                    <div >
+                    <img class="baskar" id="img3" src="demonslayer4.jpg" alt="">
+                    </div>
+                    <div id="good3" class="below">
+                      <h2 id="ru3" class="rp">Rp.290</h2>
+                    <center><h4 id="ttt3" class="tshirtname">Nezuko T-shirt</h4></center>
+                      <button id="buy3" class="buy">BUY NOW</button>
+                      <button id="add3" class="add">ADD TO CART</button>
+                    </div>
+
+                    <div data-price="250" id="ds4" class="fine">
+                      <div >
+                      <img class="baskar" id="img4" src="demonslayer12.jpg" alt="">
+                      </div>
+                      <div id="good4" class="below">
+                        <h2 id="ru4" class="rp">Rp.250</h2>
+                      <center><h4 id="ttt4" class="tshirtname">Kanao T-shirt</h4></center>
+                        <button id="buy4"class="buy">BUY NOW</button>
+                        <button id="add4" class="add">ADD TO CART</button>
+                      </div>
+
+
+                      <div data-price="470" id="ds6" class="fine">
+                        <div >
+                        <img  class="baskar" id="img6" src="demonslayer11.jpg" alt="">
+                        </div>
+                        <div id="good6" class="below">
+                          <h2 id="ru6" class="rp">Rp.470</h2>
+                          <center><h4 id="ttt6" class="tshirtname">Tengen Uzui T-shirt</h4></center>
+                          <button id="buy6" class="buy">BUY NOW</button>
+                          <button id="add6" class="add">ADD TO CART</button>
+                        </div>
+
+                        <div data-price="380" id="ds7" class="fine">
+                          <div >
+                          <img class="baskar" id="img7" src="demonslayer10.jpg" alt="">
+                          </div>
+                          <div id="good7" class="below">
+                            <h2 id="ru7" class="rp">Rp.380</h2>
+                          <center><h4 id="ttt7" class="tshirtname">Hashira of Flames T-shirt</h4></center>
+                            <button id="buy7" class="buy">BUY NOW</button>
+                            <button id="add7" class="add">ADD TO CART</button>
+                          </div>
+
+                          <div data-price="550" id="ds8" class="fine">
+                            <div >
+                            <img  class="baskar" id="img8" src="demonslayer9.jpg" alt="">
+                            </div>
+                            <div id="good8" class="below">
+                              <h2 id="ru8" class="rp">Rp.550</h2>
+                            <center><h4 id="ttt8" class="tshirtname">Inosuke T-shirt</h4></center>
+                              <button id="buy8" class="buy">BUY NOW</button>
+                              <button id="add8" class="add">ADD TO CART</button>
+                            </div>
+
+                    <div data-price="600" id="ds10" class="fine">
+                      <div >
+                      <img class="baskar" id="img10" src="demonslayer3.jpg" alt="">
+                      </div>
+                      <div id="good10" class="below">
+                        <h2 id="ru10" class="rp">Rp.600</h2>
+                      <center><h4 id="ttt10" class="tshirtname">Nezuko T-shirt</h4></center>
+                        <button id="buy10" class="buy">BUY NOW</button>
+                        <button id="add10" class="add">ADD TO CART</button>
+                      </div>
+
+                      <div data-price="350" id="ds12" class="fine">
+                        <div >
+                        <img class="baskar" id="img12" src="demonslayer2.jpg" alt="">
+                        </div>
+                        <div id="good12" class="below">
+                          <h2 id="ru12" class="rp">Rp.350</h2>
+                        <center><h4 id="ttt12" class="tshirtname">Nezuko and Tanjiro T-shirt</h4></center>
+                          <button id="buy12" class="buy">BUY NOW</button>
+                          <button id="add12" class="add">ADD TO CART</button>
+                        </div>
+
+                        <div data-price="210" id="ds13" class="fine">
+                          <div >
+                          <img class="baskar" id="img13" src="demonslayer1.jpg" alt="">
+                          </div>
+                          <div id="good13" class="below">
+                            <h2 id="ru13" class="rp">Rp.210</h2>
+                          <center><h4 id="ttt13" class="tshirtname">Nezuko and Tanjiro T-shirt</h4></center>
+                            <button id="buy13" class="buy">BUY NOW</button>
+                            <button id="add13" class="add">ADD TO CART</button>
+                          </div>
+
+                          <div data-price="450" id="ds14" class="fine">
+                            <div >
+                            <img class="baskar" id="img14" src="demonslayer8.jpg" alt="">
+                            </div>
+                            <div id="good14" class="below">
+                              <h2 id="ru14" class="rp">Rp.450</h2>
+                            <center><h4 id="ttt14" class="tshirtname">Hashira T-shirt</h4></center>
+                              <button id="buy14" class="buy">BUY NOW</button>
+                              <button id="add14" class="add">ADD TO CART</button>
+                            </div>
+
+                      
+              
+      </div>
+  </body>
+</html>
